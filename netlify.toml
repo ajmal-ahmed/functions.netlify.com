@@ -2,10 +2,17 @@
   publish = "dist"
   command = "npm run build"
   functions = "dist/functions"
+
+[functions]
+  # Directory with serverless functions, including background
+  # functions, to deploy. This is relative to the base directory
+  # if one has been set, or the root directory if
+  # a base hasn’t been set.
+  directory = "functions/"
   
 [[redirects]]  
-  from = "/add-tutorial/"
-  to = "/tutorials/"
+  from = "/wp-json/"
+  to = "/functions/"
   
 [[redirects]]
   from = "/post-1/"
